@@ -3,7 +3,7 @@
     // @ts-ignore
     import currencyapi from '@everapi/currencyapi-js'
     // Initializing the client with personal API-key
-    const client = new currencyapi('cur_live_PsftBWdChUgy9gXfqnd1P4lOu0kEoUtPvkLyuiBw')
+    const client = new currencyapi(import.meta.env.VITE_API_KEY)
 
     let transactionlist = [
         {transactionDate: 240501, amount: 10, currency: 'SEK'},
