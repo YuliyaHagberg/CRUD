@@ -1,10 +1,12 @@
 <script>
     import "../app.css"
+    import Header from '../components/Header.svelte'
+    import Footer from '../components/Footer.svelte'
 </script>
 
-<!-- This file is used as a template for every page in the application. -->
-
+<Header />
 
 <!-- Slot is replaced with a specific pages' content -->
 <slot />
 
+<Footer />
